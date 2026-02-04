@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aberturas Gutiérrez | Calidad y Confianza en La Plata</title>
+    <meta name="description" content="Especialistas en aberturas de aluminio de media y alta prestación con sello familiar.">
+    <meta property="og:title" content="Aberturas Gutiérrez | Diseño y Seguridad">
+    <meta property="og:description" content="Calidad y Confianza con Sello Familiar. Expertos en Herrero, Módena y A30.">
+    <meta property="og:image" content="img/logo-social.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .bg-overlay { background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5), transparent); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent text-white">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+                    <img src="img/logo.png" onerror="this.src='https://placehold.co/100x100/transparent/white?text=AG'" alt="AG" class="object-contain w-full h-full transform scale-150">
+                </div>
+                <span id="nav-brand" class="text-lg md:text-xl font-bold tracking-tight">Aberturas <span class="text-red-600">Gutiérrez</span></span>
+            </div>
+            <div id="nav-links" class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-red-600 transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-red-600 transition-colors">Nosotros</a>
+                <a href="#lineas" class="hover:text-red-600 transition-colors">Líneas</a>
+                <a href="#productos" class="hover:text-red-600 transition-colors">Productos</a>
+                <a href="https://wa.me/5492215314611" target="_blank" class="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition-all shadow-lg">Presupuesto</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-inherit focus:outline-none"><i data-lucide="menu" class="w-8 h-8"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden bg-zinc-950 text-white flex-col items-center py-6 space-y-4 md:hidden border-t border-white/10">
+            <a href="#inicio" class="mobile-link py-2">Inicio</a>
+            <a href="#nosotros" class="mobile-link py-2">Nosotros</a>
+            <a href="#lineas" class="mobile-link py-2">Líneas</a>
+            <a href="#productos" class="mobile-link py-2">Productos</a>
+            <a href="https://wa.me/5492215314611" class="bg-red-600 px-6 py-2 rounded-full">Solicitar Presupuesto</a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative h-screen flex items-center bg-zinc-900 overflow-hidden">
+        <div class="absolute inset-0 z-0"><img src="img/fondo-hero.webp" onerror="this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop'" class="w-full h-full object-cover opacity-30"></div>
+        <div class="absolute inset-0 bg-overlay z-10"></div>
+        <div class="container mx-auto px-4 relative z-20">
+            <div class="max-w-4xl reveal active">
+                <div class="inline-block px-4 py-1 mb-6 border border-red-600 rounded-full bg-red-600/10 backdrop-blur-md">
+                    <span class="text-red-500 font-semibold uppercase text-sm tracking-wide">Calidad y Confianza</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">Diseño y Seguridad <br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">Para Tu Proyecto</span></h1>
+                <p class="text-xl text-gray-300 mb-8 font-light max-w-2xl italic leading-relaxed">"Aberturas Gutiérrez al frente de tu Hogar: Calidad y Confianza con Sello Familiar." Especialistas en media y alta prestación.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#lineas" class="px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-center shadow-lg hover:bg-red-700 transition-all flex items-center justify-center gap-2">Ver Líneas <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+                    <a href="https://wa.me/5492215314611" target="_blank" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-bold text-center hover:bg-white hover:text-black transition-all">Contactarnos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white relative z-30 -mt-10 mx-4 md:mx-12 rounded-xl shadow-2xl border-t-4 border-red-600">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div class="p-4"><span class="counter font-bold text-5xl md:text-6xl text-red-600" data-target="500" data-suffix="+">0</span><p class="text-gray-500 font-medium uppercase text-sm mt-2 tracking-widest">Obras Completadas</p></div>
+            <div class="p-4"><span class="counter font-bold text-5xl md:text-6xl text-red-600" data-target="15" data-suffix="+">0</span><p class="text-gray-500 font-medium uppercase text-sm mt-2 tracking-widest">Años de Experiencia</p></div>
+            <div class="p-4"><span class="counter font-bold text-5xl md:text-6xl text-red-600" data-target="100" data-suffix="%">0</span><p class="text-gray-500 font-medium uppercase text-sm mt-2 tracking-widest">Satisfacción</p></div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h3 class="text-red-600 font-bold uppercase tracking-widest mb-2 text-sm">Nuestra Historia</h3>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Sello Familiar y Trayectoria</h2>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">Aberturas Gutiérrez nace de un proyecto familiar impulsado por años de experiencia. Nos especializamos en obras particulares y de media prestación. Nuestra estructura nos permite ser <strong>altamente competitivos</strong>, garantizando una atención postventa para cada cliente.</p>
+                <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm border border-l-4 border-red-600">
+                    <div class="bg-red-50 p-3 rounded-full"><i data-lucide="shield-check" class="text-red-600 w-8 h-8"></i></div>
+                    <div><p class="font-bold text-gray-900">Garantía Postventa</p><p class="text-sm text-gray-500 italic">Atención personalizada y directa 100%</p></div>
+                </div>
+            </div>
+            <div class="reveal"><img src="img/taller.webp" onerror="this.src='https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1500'" class="rounded-lg shadow-xl w-full h-[450px] object-cover grayscale hover:grayscale-0 transition-all duration-700"></div>
+        </div>
+    </section>
+
+    <section id="lineas" class="py-24 bg-zinc-900 text-white">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 italic">Expertos en Aluminio</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto italic leading-relaxed">Trabajamos con las líneas más demandadas del mercado, asegurando hermeticidad, aislación acústica y durabilidad.</p>
+        </div>
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal"><img src="img/armado.webp" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1500'" class="rounded-xl shadow-2xl w-full h-[500px] object-cover border-b-4 border-red-600 transition-transform hover:scale-[1.02]"></div>
+            <div class="space-y-6">
+                <div class="reveal bg-white/5 border border-white/10 p-6 rounded-xl group hover:bg-white/10 transition-all">
+                    <div class="flex gap-4">
+                        <i data-lucide="layers" class="text-red-600 w-8 h-8"></i>
+                        <div><h4 class="text-xl font-bold mb-2">Línea Herrero</h4><p class="text-gray-400 text-sm italic leading-relaxed">La opción tradicional y económica. Ideal para lavaderos y ventanas internas. Funcionalidad comprobada.</p></div>
+                    </div>
+                </div>
+                <div class="reveal bg-white/5 border border-white/10 p-6 rounded-xl group hover:bg-white/10 transition-all">
+                    <div class="flex gap-4">
+                        <i data-lucide="home" class="text-red-600 w-8 h-8"></i>
+                        <div><h4 class="text-xl font-bold mb-2">Línea Módena</h4><p class="text-gray-400 text-sm italic leading-relaxed">Alta prestación con excelente equilibrio precio-calidad. Hermeticidad superior y estética moderna.</p></div>
+                    </div>
+                </div>
+                <div class="reveal bg-white/5 border border-white/10 p-6 rounded-xl group hover:bg-white/10 transition-all">
+                    <div class="flex gap-4">
+                        <i data-lucide="shield-check" class="text-red-600 w-8 h-8"></i>
+                        <div><h4 class="text-xl font-bold mb-2">A30 New</h4><p class="text-gray-400 text-sm italic leading-relaxed">Máxima prestación y diseño. Soporta grandes dimensiones y doble vidriado (DVH) de gran espesor.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="py-24 bg-white">
+        <div class="container mx-auto px-4 text-center mb-16"><h2 class="text-4xl font-bold underline decoration-red-600 decoration-4 underline-offset-8">Nuestros Productos</h2></div>
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/v.webp" onerror="this.src='https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Ventanas</h3></div>
+            </div>
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/p.webp" onerror="this.src='https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Puertas</h3></div>
+            </div>
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/c.webp" onerror="this.src='https://images.unsplash.com/photo-1628744876497-eb30460be9f6?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Cerramientos</h3></div>
+            </div>
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/f.webp" onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Fachadas</h3></div>
+            </div>
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/b.webp" onerror="this.src='https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Barandas</h3></div>
+            </div>
+            <div class="reveal group h-80 relative overflow-hidden rounded-xl shadow-lg">
+                <img src="img/vi.webp" onerror="this.src='https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6"><h3 class="text-2xl font-bold text-white uppercase tracking-wider">Vidrios Especiales</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-zinc-950 text-white pt-16 pb-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="lg:col-span-2"><h3 class="text-2xl font-bold italic mb-6">Aberturas Gutiérrez</h3><p class="text-gray-400 mb-6 max-w-sm italic">Calidad y Confianza con Sello Familiar en La Plata.</p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com/aberturasgutierrez.laplata" target="_blank" class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="https://instagram.com/aberturas.laplata/" target="_blank" class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            <div><h4 class="text-red-500 font-bold mb-4 tracking-wider uppercase text-sm">Contacto</h4><p class="text-gray-300 font-bold">+54 9 221 531 4611</p><p class="text-gray-400">La Plata, Buenos Aires</p></div>
+            <div><h4 class="text-red-500 font-bold mb-4 tracking-wider uppercase text-sm">Ubicación</h4>
+                <a href="https://maps.app.goo.gl/fUj5JiudvyruEB2J9" target="_blank" class="block border border-zinc-800 rounded-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=400" class="w-full h-24 object-cover grayscale group-hover:grayscale-0 transition-all">
+                    <div class="bg-zinc-900 text-center py-1 text-[10px] text-gray-500 uppercase tracking-widest">Ver en Google Maps</div>
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-zinc-900 mt-12 pt-8 text-center"><p class="text-gray-600 text-xs italic tracking-widest">© 2026 Aberturas Gutiérrez. Todos los derechos reservados.</p></div>
+    </footer>
+
+    <a href="https://wa.me/5492215314611?text=Hola%20vi%20tu%20pagina%20web,%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all">
+        <svg viewBox="0 0 24 24" class="w-8 h-8 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script>
+        lucide.createIcons();
+        // Menú Móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        document.querySelectorAll('.mobile-link').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+        
+        // Navbar Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { navbar.classList.add('bg-white', 'shadow-md', 'py-2', 'text-gray-900'); navbar.classList.remove('bg-transparent', 'py-4', 'text-white'); }
+            else { navbar.classList.remove('bg-white', 'shadow-md', 'py-2', 'text-gray-900'); navbar.classList.add('bg-transparent', 'py-4', 'text-white'); }
+        });
+
+        // Revelaciones y Contadores
+        const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    let count = 0;
+                    const update = () => {
+                        const inc = target / 60;
+                        if (count < target) { count += inc; counter.innerText = Math.ceil(count) + suffix; setTimeout(update, 15); }
+                        else { counter.innerText = target + suffix; }
+                    };
+                    update(); observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(c => counterObserver.observe(c));
+    </script>
+</body>
+</html>
