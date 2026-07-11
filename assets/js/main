@@ -1,0 +1,85 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Forzar renderizado de iconos Lucide de forma segura
+    try {
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    } catch (error) {
+        console.log("Esperando carga de iconos...");
+    }
+
+    // 2. Control dinámico del Navbar al hacer Scroll (Evita que se pierdan las letras)
+    const navbar = document.getElementById('navbar');
+    const navLinks = document.getElementById('nav-links');
+    const navBrand = document.getElementById('nav-brand');
+
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Fondo sólido oscuro para que contraste perfectamente con todo el sitio
+                navbar.classList.add('bg-zinc-950', 'shadow-xl', 'py-3');
+                navbar.classList.remove('bg-transparent', 'py-4');
+                if (navLinks) navLinks.classList.add('text-white');
+            } else {
+                // Fondo transparente al inicio
+                navbar.classList.remove('bg-zinc-950', 'shadow-xl', 'py-3');
+                navbar.classList.add('bg-transparent', 'py-4');
+            }
+        });
+    }
+
+    // 3. Lógica del Menú Hamburguesa Móvil
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+
+    // 4. Animaciones de aparición al hacer scroll (Reveal)
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { 
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // 5. Contador Animado Blindado (Sube fluidamente)
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = +counter.getAttribute('data-target');
+                const suffix = counter.getAttribute('data-suffix') || '';
+                let count = 0;
+                
+                const update = () => {
+                    const inc = target / 40;
+                    if (count < target) {
+                        count += inc;
+                        counter.innerText = Math.ceil(count) + suffix;
+                        setTimeout(update, 20);
+                    } else { 
+                        counter.innerText = target + suffix; 
+                    }
+                };
+                update(); 
+                observer.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    counters.forEach(c => counterObserver.observe(c));
+});
